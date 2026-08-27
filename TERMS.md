@@ -8,7 +8,7 @@ These Terms of Service apply only to the official Bot Catcher Discord bot, opera
 
 See also: [Privacy Policy](PRIVACY.md)
 
-**Last Updated: July 3, 2026**
+**Last Updated: August 28, 2026**
 
 ## Acceptance of Terms
 
@@ -57,6 +57,10 @@ Administrators are responsible for:
 Any misuse, misconfiguration, or failure to understand the consequences of a chosen setup is the sole responsibility of the administrator who configured it.
 
 The bot operator is not liable for any actions taken against members as a result of the bot's automated enforcement, including kicks, bans, timeouts, or warnings, whether triggered correctly or as a false positive. All server members are subject to the configuration choices made by their server's administrators.
+
+## Donations
+
+Bot Catcher is free to use. Donations (for example through Buy Me a Coffee) are entirely voluntary gifts toward hosting costs. They are not a purchase, they are non-refundable, and they grant no features, capacity, priority support, or any other benefit. Every feature described in these terms is available to every server regardless of whether anyone has donated.
 
 ## Limitation of Liability
 
