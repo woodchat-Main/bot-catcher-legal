@@ -8,13 +8,13 @@ This Privacy Policy applies only to the official Bot Catcher Discord bot and its
 
 See also: [Terms of Service](TERMS.md)
 
-**Last Updated: October 11, 2026**
+**Last Updated: October 16, 2026**
 
 woodchat operates the Bot Catcher Discord bot and its website. This Privacy Policy explains what data the bot and the website collect, store, and use.
 
 ## Information We Collect
 
-Bot Catcher stores data in a database (SQLite) on a server operated by woodchat and hosted by IONOS. IONOS provides that server and stores the data on our behalf; see [Third-Party Processors](#third-party-processors) below.
+Bot Catcher stores data in a database (SQLite) on a server operated by woodchat and hosted by Contabo. Contabo provides that server and stores the data on our behalf; see [Third-Party Processors](#third-party-processors) below.
 
 **Server configuration**, per server the bot is added to:
 - Server ID, server name, staff/log channel IDs, rejoin invite URL
@@ -60,6 +60,8 @@ If your browser blocks, or would block, part of a page for security reasons, the
 
 **Message fingerprints (ephemeral)**: to detect the same message or image spammed across multiple channels, we briefly store a hash of message content/attachments per server, channel, and user. A cleanup runs every 5 minutes and removes anything older than the longest detection window a server can configure, which is 1 hour. Nothing is kept beyond that.
 
+**Bug reports**: when you use `/bug`, what you write is posted to a private Discord channel operated by woodchat, together with your Discord user ID and username, the server and channel you sent it from, and the time. It is not stored in our database. It stays in that channel until woodchat deletes it, and you can ask for that at any time (see [Contact](#contact)).
+
 ## How We Use Your Information
 
 This data powers the bot's core functions:
@@ -81,7 +83,7 @@ This data powers the bot's core functions:
 
 ## Data Storage and Retention
 
-Data is stored in our database on the IONOS hosted server and retained until you remove it or remove the bot. Removing the bot from your server does not currently trigger automatic deletion of that server's data (unlike some smaller single-purpose bots) because catch history, action logs, and blacklist entries are used across the service and for cross-server protection. If you want your server's data deleted after removing the bot, contact us using the details in [Contact](#contact) and we will delete it on request.
+Data is stored in our database on the Contabo hosted server and retained until you remove it or remove the bot. Removing the bot from your server does not currently trigger automatic deletion of that server's data (unlike some smaller single-purpose bots) because catch history, action logs, and blacklist entries are used across the service and for cross-server protection. If you want your server's data deleted after removing the bot, contact us using the details in [Contact](#contact) and we will delete it on request.
 
 Ephemeral message fingerprints (used for mass-message detection) are deleted automatically within about an hour, by a cleanup that runs every 5 minutes, regardless of whether the bot is still in your server.
 
@@ -99,11 +101,11 @@ Ephemeral message fingerprints (used for mass-message detection) are deleted aut
 
 Bot Catcher relies on the following third-party infrastructure to operate:
 - **Discord**: all bot activity happens through Discord's API. [Discord's Privacy Policy](https://discord.com/privacy) applies to your use of Discord itself.
-- **IONOS**: hosts the server the bot and its database run on. All persistent data described above is stored there.
+- **Contabo**: hosts the server the bot and its database run on. All persistent data described above is stored there.
 - **top.gg**: when a vote is checked, your Discord user ID is sent to top.gg. [top.gg's Privacy Policy](https://top.gg/privacy) applies to voting there.
 - **Cloudflare**: every visit to the website passes through Cloudflare, which provides the secure connection and protection against attacks. Cloudflare sees your IP address and the request as it passes. [Cloudflare's Privacy Policy](https://www.cloudflare.com/privacypolicy/) applies to that processing.
 
-No data is sold or shared with any third party beyond what's described in this policy (Discord, IONOS as our hosting provider, top.gg for vote checks, Cloudflare for website traffic, and the cross-server sharing described above).
+No data is sold or shared with any third party beyond what's described in this policy (Discord, Contabo as our hosting provider, top.gg for vote checks, Cloudflare for website traffic, and the cross-server sharing described above).
 
 ## Your Rights
 
