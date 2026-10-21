@@ -1,6 +1,6 @@
 # Terms of Service for Bot Catcher
 
-> **Note:** This policy is subject to change. For material changes affecting data handling or user rights, an updated policy will be published here and/or announced in the support Discord server.
+> **Note:** These terms are subject to change. For material changes affecting data handling or user rights, updated terms will be published here and/or announced in the support Discord server.
 
 **Official instance info**
 
@@ -8,7 +8,7 @@ These Terms of Service apply only to the official Bot Catcher Discord bot and it
 
 See also: [Privacy Policy](PRIVACY.md)
 
-**Last Updated: October 11, 2026**
+**Last Updated: October 21, 2026**
 
 ## Acceptance of Terms
 
@@ -30,6 +30,8 @@ Depending on which features you enable, the bot may need:
 - View Channels and Send Messages (to monitor channels and post logs/warnings)
 - Kick Members / Ban Members / Moderate Members (Timeout) (to execute moderation actions)
 - Manage Messages (to delete spam across channels)
+- Read Message History (to find and update its own honeypot warnings, and to clean up a caught user's recent messages)
+- Embed Links and Attach Files (to post catch alerts with the caught images, and the honeypot warning with its icon)
 
 `/checkperms` audits your server for missing permissions and role hierarchy issues.
 

@@ -8,7 +8,7 @@ This Privacy Policy applies only to the official Bot Catcher Discord bot and its
 
 See also: [Terms of Service](TERMS.md)
 
-**Last Updated: October 16, 2026**
+**Last Updated: October 21, 2026**
 
 woodchat operates the Bot Catcher Discord bot and its website. This Privacy Policy explains what data the bot and the website collect, store, and use.
 
@@ -68,7 +68,7 @@ This data powers the bot's core functions:
 - Monitor honeypot channels and detect account age, phishing links, mass-posted spam, and known bad images
 - Execute the configured moderation action (kick, ban, timeout, or warn) and DM the affected user
 - Post catch details to your server's staff/log channels, including a "Submit to Global Blacklist" option for staff to use at their discretion
-- Maintain a shared blacklist of spam images and phishing domains across all servers running the bot (see "Cross-Server Data Sharing" below)
+- Maintain a shared blacklist of spam images and phishing domains across all servers running the bot (see [Where Catch Data Is Sent](#where-catch-data-is-sent) below)
 - Provide admins with `/viewcatches`, `/actionlog`, and `/checkperms` to review what the bot has done in their own server
 - Let server admins change their server's settings, and staff view them, on the website, with detection statistics, the blacklist, a permissions check and the settings history
 
