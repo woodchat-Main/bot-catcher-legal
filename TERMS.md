@@ -8,7 +8,7 @@ These Terms of Service apply only to the official Bot Catcher Discord bot and it
 
 See also: [Privacy Policy](PRIVACY.md)
 
-**Last Updated: October 21, 2026**
+**Last Updated: October 24, 2026**
 
 ## Acceptance of Terms
 
@@ -43,15 +43,19 @@ Do **not** use Bot Catcher to:
 - Evade moderation in other servers
 - Configure a commonly used channel (e.g. `#general`) as a honeypot with the intent of causing mass, indiscriminate punishment
 - Submit images to the global blacklist that are not actually spam/malicious content, or otherwise abuse shared cross-server features in bad faith
+- Upload a honeypot warning image that is sexual, violent, hateful, illegal, infringes someone else's rights, or imitates Discord or another service, or that otherwise breaks Discord's rules
+- Give the bot a nickname, avatar or banner that impersonates Discord, its staff, another bot, a real person or your server's staff, or that is sexual, violent, hateful, illegal or infringes someone else's rights
 - Try to access servers or settings you have not been given access to, disrupt the website, or send it automated traffic beyond normal use
 
-Server administrators are solely responsible for how they configure the bot, including which channels are monitored, what actions are taken, and any custom invite links or messages the bot sends on their behalf.
+Server administrators are solely responsible for how they configure the bot, including which channels are monitored, what actions are taken, and any custom invite links, messages or images the bot sends on their behalf.
 
 ## Bot Operator Commitment
 
 Only server administrators (or users they grant permission to) can change the settings the bot uses within their own server, through `/setup`, related commands, or the website. The bot operator will not intentionally reconfigure a server's settings in a harmful way or circumvent the administrators' intentions.
 
 The bot operator (woodchat) retains cross-server visibility as described in the Privacy Policy (dev log channel, global blacklist), and may act on that data, for example promoting or removing a global blacklist entry, or reaching out about misuse.
+
+Every honeypot warning image a server uploads is shown to the operator. The operator may remove one that breaks these terms or Discord's, which puts the default icon back on that server's warnings; the removal is shown in the server's settings history and announced in its log channel when one is set. The same applies to the bot's nickname, avatar and banner in a server: every change is shown to the operator, who may reset the bot to its global profile there.
 
 The operator can also change a server's settings through the website, and does so only to help when that server's administrators ask, or to stop clear misuse of the bot (for example a honeypot set up to punish a server's members indiscriminately). Every such change needs a second verification step, is shown in that server's settings history as made by "Bot Catcher support", and is announced in its log channel when one is set.
 

@@ -8,7 +8,7 @@ This Privacy Policy applies only to the official Bot Catcher Discord bot and its
 
 See also: [Terms of Service](TERMS.md)
 
-**Last Updated: October 21, 2026**
+**Last Updated: October 24, 2026**
 
 woodchat operates the Bot Catcher Discord bot and its website. This Privacy Policy explains what data the bot and the website collect, store, and use.
 
@@ -21,6 +21,8 @@ Bot Catcher stores data in a database (SQLite) on a server operated by woodchat 
 - Feature toggles and settings (honeypot, account age check, link detection, mass message detection, thresholds, timeout durations, configured actions)
 - Honeypot channel IDs and names
 - Immune role IDs and names, and the ID of the admin who added them
+- Custom honeypot warning text, if an administrator writes one
+- A custom honeypot warning image, if an administrator uploads one on the website (see Custom warning image below)
 
 **Catch records**, created when the bot takes action against a user:
 - Server ID, channel ID, message ID, the user's Discord ID and username/tag
@@ -36,11 +38,15 @@ Bot Catcher stores data in a database (SQLite) on a server operated by woodchat 
 - A perceptual hash: a short summary of the image's overall structure, used to recognize resized or re-saved copies
 - ORB feature descriptors and the positions of those features in the image: a mathematical representation of the image's visual keypoints, used for fuzzy matching. This is derived data, not a copy of the image, and cannot be used to reconstruct the original image.
 - A 64x64 pixel grayscale thumbnail. Unlike the items above, this is a very small, low resolution picture of the image. It is kept only so that improvements to image matching can be tested against images that were already caught. It is never posted to Discord or shown to any server.
-- Apart from that thumbnail, we do not keep a copy of the original image file. Images are downloaded in memory to compute the data above and, when a catch is reported to a staff/log/dev channel, are re-uploaded to that Discord channel as part of the alert (see "Where Catch Data Is Sent" below); we do not separately archive the image files ourselves.
+- Apart from that thumbnail, we do not keep a copy of the original image file of a caught or blacklisted image. Images are downloaded in memory to compute the data above and, when a catch is reported to a staff/log/dev channel, are re-uploaded to that Discord channel as part of the alert (see "Where Catch Data Is Sent" below); we do not separately archive the image files ourselves.
 
 When staff or the operator mark a catch as a false positive, the same kinds of image data are stored for that image as a known clean entry, so it is not flagged again.
 
-**Vote records**: voting for Bot Catcher on top.gg unlocks a custom honeypot warning and extra honeypot channels. To check a vote, your Discord user ID is sent to top.gg. If you have voted, we store your user ID, when you last voted, and how many of your votes we have seen, so the bot can tell you when you last voted. Voting never affects any protection feature.
+**Custom warning image**: server administrators can upload their own image for the honeypot warning on the website. We store that image, converted to a PNG of at most 256 pixels per side with any embedded metadata (such as location or camera details) removed, together with its SHA256 hash, its size, the Discord user ID of the admin who uploaded it, and when. The bot shows it on the warning in that server's honeypot channels. Every upload is also posted, with the server's name and ID and the uploader's ID, to a private Discord channel operated by woodchat, so misuse can be spotted and the image removed. The stored image is deleted when an administrator resets it or woodchat removes it, and the server's warnings go back to the default icon. Like the rest of a server's configuration it is kept if the bot is removed, until deletion is requested, and it is included in backups. The copy in woodchat's private channel stays until woodchat deletes it.
+
+**Bot profile**: server administrators who have voted can give the bot its own nickname, avatar and banner in their server on the website. These are set directly on Discord, which holds them as part of the bot's profile in that server; Bot Catcher does not store the images. An uploaded avatar or banner is converted to a PNG with any embedded metadata removed before it is sent to Discord. Every change is recorded in the settings history (the nickname, or Discord's identifier for the image), and every nickname, avatar or banner that is set is also posted, with the server's name and ID and the admin's ID, to a private Discord channel operated by woodchat, so misuse can be spotted and the profile reset. The copy in that channel stays until woodchat deletes it.
+
+**Vote records**: voting for Bot Catcher on top.gg unlocks a custom honeypot warning, extra honeypot channels and a custom bot profile in your server. To check a vote, your Discord user ID is sent to top.gg. If you have voted, we store your user ID, when you last voted, and how many of your votes we have seen, so the bot can tell you when you last voted. Voting never affects any protection feature.
 
 **Suspicious links**: a shared list of known phishing/scam domains (domain name, category, who reported it, report count). Not tied to any individual server or user beyond the reporter's ID.
 
@@ -95,7 +101,7 @@ Ephemeral message fingerprints (used for mass-message detection) are deleted aut
 - Private messages sent to the bot by users, or voice data
 - Stored IP addresses: the website uses your IP address only in memory, for a short time, to stop abusive request rates, and never writes it down
 - Payment or account details
-- The original file of an image once the image data described above has been extracted (we do not maintain an image archive beyond the small grayscale thumbnail described above and what is posted to configured alert channels as part of a catch)
+- The original file of an image once the image data described above has been extracted (we do not maintain an image archive beyond the small grayscale thumbnail described above and what is posted to configured alert channels as part of a catch). A server's own warning image is the one image we keep, re-encoded as described above, because the bot needs it to post the warning
 
 ## Third-Party Processors
 
